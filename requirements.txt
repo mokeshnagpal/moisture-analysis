@@ -3,4 +3,3 @@ Gunicorn
 numpy
 joblib
 xgboost
-json
