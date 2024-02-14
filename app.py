@@ -18,6 +18,3 @@ def predict():
     prediction = model.predict(array(features).reshape(1, -1))
 
     return jsonify({'moisture_prediction': prediction.tolist()})
-
-if __name__ == '__main__':
-    app.run(debug=True)
