@@ -1,0 +1,126 @@
+<!doctype html>
+<html>
+
+<head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap" rel="stylesheet">
+
+    <style>
+        body{
+           background-image: url(raphael-rychetsky-li9JfUHQfOY-unsplash.jpg);
+           background-repeat: no-repeat;
+           background-size: cover;
+           background-position: center;
+            padding: 75px 0;
+        }
+       
+        input:hover{
+            background-color: orange;
+        }
+        .form-control:focus{
+            box-shadow: 0 0 0 ;
+            border:1px solid #f4f900;
+        }
+        img{
+            max-height: 150px;
+            max-width: 200px;
+        }
+        .form-colu{
+            background-color:rgba(255,255,255,0.5);
+            backdrop-filter: blur(30px);
+            border-radius: 10px;
+        }
+        
+h1{
+    font-size: 50px;
+    color: white;
+    font-family: "Protest Riot", sans-serif;
+    font-weight: 100;
+}
+
+    </style>
+</head>
+
+<body>
+    <div class="container ">
+        <div class="row justify-content-center ">
+
+            <div class="col-lg-7 col-md-12 d-flex text text-center align-items-center position-relative"> 
+              
+                <h1 class=" protest-riot-regular col-md-12 text text-center">"Listen to the whispers of the roots: AI-powered valves, the ultimate farmer's companion"</h1>
+            </div>
+    <div class=" col-lg-5  col-md-10 col-sm-12">
+           
+      <div class="form-colu py-5 px-4 d-flex flex-column align-items-center justify-content-center">
+        
+        <img class="rounded-circle pb-3 d-flex align-items-center" src="logo.webp" alt="logo"> 
+       <div class="input-group flex-nowrap pb-2">
+        <label class="input-group-text" for="plant_type">Plant Type</label>
+        <select class="form-control" type="text" id="plant_type" name="plant_type" value="">
+            <option value="5">Rice</option>
+            <option value="9">Wheat</option>
+             <option value="0">Carrot</option>
+              <option value="1">Chili</option>
+               <option value="2">Cinnamon</option>
+                <option value="3">Corn</option>
+                 <option value="4">Eggplant</option>
+                  <option value="6">Strawberries</option>
+                  <option value="7">Sunflowers</option>
+                    <option value="8">Tomato</option>
+        </select>
+        </div>
+        <div class="input-group flex-nowrap my-2">
+        <label  class="input-group-text" for="ph" >PH</label>
+        <input class="form-control" id="ph" name="ph" placeholder="ph" value="" />
+        </div>
+        <div class="input-group flex-nowrap my-2">
+        <label class="input-group-text" for="soil_ec">Soil E.C.</label>
+        <input class="form-control" id="soil_ec" name="soil_ec" placeholder="Soil E.C." value="" />
+        </div>
+          <div class="input-group flex-nowrap my-2">
+        <label class="input-group-text" for="phosphorus">Phosphorus</label>
+        <input   class="form-control"  id="phosphorus" name="phosphorus" placeholder="Phosphorus" value="" />
+           </div>
+                 <div class="input-group flex-nowrap my-2">
+        <label  class="input-group-text" for="potassium">Potassium</label>
+        <input  class="form-control"  id="potassium" name="potassium" placeholder="Potassium" value="" />
+         </div>
+          <div class="input-group flex-nowrap my-2">
+        <label class="input-group-text" for="urea">Urea</label>
+        <input  class="form-control"  id="urea" name="urea" placeholder="Urea" value="" />
+        </div>
+        <div class="input-group flex-nowrap my-2">
+        <label class="input-group-text" for="tsp">T.S.P.</label>
+        <input  class="form-control"  id="tsp" name="tsp" placeholder="T.S.P." value="" />
+        </div>
+        <div class="input-group flex-nowrap my-2">
+        <label  class="input-group-text" for="mop">M.O.P.</label>
+        <input   class="form-control"  id="mop" name="mop" placeholder="M.O.P." value="" />
+         </div>
+        <div class="input-group flex-nowrap my-2"  id="moisture" name="moisture">
+            <label class="input-group-text">Moisture:</label>
+            <input disabled class="form-control"  id="moisture_value" name="moisture_value" /></div>
+            
+            <div class="d-grid gap-2 d-md-flex justify-content-md-center"><button  class="btn btn-outline-success" id="override">Override</button></div>
+        </div>
+    </div>
+    </div>
+    </div>
+</div>
+    <div class="container">
+        <div id="crops"></div>
+    </div>
+
+</body>
+<script src="index.js" type="module"></script>
+
+</html>
